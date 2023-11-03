@@ -1,8 +1,195 @@
+/* ----------------- ----------------- general set up ----------------- -----------------  */
+:root {
+  --theme-color: #00d5ff;
+  --text-color: #e6e6e6;
+  --login-create-account-background-color: #000;
+  --font: "Rubik", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* body {
-} */
+/* ----------------- ----------------- background image set up ----------------- -----------------  */
+body {
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url("../Images/Background.png");
+  background-size: cover;
+}
+/* ----------------- ----------------- Layout  ----------------- -----------------  */
+
+.login-creat-account-container,
+.login-creat-account-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-creat-account-form {
+  width: 100%;
+}
+
+.login-creat-account-container {
+  /* --------center the box horizontally and vertically----------- */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  /* ---------- ------------ */
+
+  width: 90%;
+  max-width: 37.5rem;
+  color: var(--text-color);
+  background-color: var(--login-create-account-background-color);
+  padding: 2.44em 2.86em 0.62em 4.88em;
+  font-family: var(--font);
+}
+
+
+.login-creat-account-links {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+
+.login-creat-account-links a {
+  border-right: 2px solid var(--theme-color);
+  text-decoration: none;
+  padding: 0 0.3em;
+  color: var(--theme-color);
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.0625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.9375rem; /* 142.424% */
+}
+
+.login-creat-account-links a:hover,.login-creat-account-links a:focus{
+  color: var(--text-color);
+}
+.login-creat-account-links a:first-child {
+  border: none;
+}
+.login-creat-account-container .conditions,
+.enter-phone-number {
+  text-align: right;
+  width: 100%;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 3.125rem;
+  letter-spacing: 0.05313rem;
+}
+.enter-phone-number {
+  margin-bottom: 0.62em;
+}
+
+
+/* ---------------Underline Animation - Link for conditions links ------------*/
+
+.login-creat-account-container .conditions a {
+  text-decoration: none;
+  color: var(--theme-color);
+  position: relative;
+  padding-bottom: 0.3em;
+}
+
+.login-creat-account-container .conditions a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--theme-color);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .login-creat-account-container .conditions a:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+/* ---------------------------*/
+
+
+/*-------------- button --------------*/
+
+.verification-code-button {
+  padding: 0.3em 1.3em;
+  font-family: inherit;
+  color: #2e2e2e;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -0.045rem;
+  background-color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.verification-code-button:hover,.verification-code-button:focus  {
+  transform: rotate(360deg);
+  transform: scale(1.01);
+  background: transparent;
+  color: var(--theme-color);
+}
+
+
+/* --------------input -------------- */
+
+.phone-number-input {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: inherit;
+  outline: none;
+  padding: 0 1em;
+  max-width: 27.8125rem;
+  width: 88%;
+  height: 3.4375rem;
+  display: block;
+  margin-bottom: 2em;
+  background: #5e5e5e;
+  border: none;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  :root{
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  :root{
+    font-size: 8px;
+  }
+}
+@media (max-width: 300px) {
+  :root{
+    font-size: 7px;
+  }
+}
+@media (max-width: 200px) {
+  :root{
+    font-size: 5px;
+  }
+}

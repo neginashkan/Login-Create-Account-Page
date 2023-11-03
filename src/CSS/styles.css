@@ -190,7 +190,7 @@ body {
 }
 @media (max-width: 300px) {
   :root{
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 @media (max-width: 200px) {

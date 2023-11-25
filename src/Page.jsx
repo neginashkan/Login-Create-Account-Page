@@ -1,4 +1,4 @@
-import "./CSS/styles.css";
+import "./index.css";
 import LoginCreatAccount from "./Components/LoginCreatAccount"
 
 

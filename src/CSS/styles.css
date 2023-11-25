@@ -1,10 +1,3 @@
-/* ----------------- ----------------- general set up ----------------- -----------------  */
-:root {
-  --theme-color: #00d5ff;
-  --text-color: #e6e6e6;
-  --login-create-account-background-color: #000;
-  --font: "Rubik", sans-serif;
-}
 
 * {
   box-sizing: border-box;
@@ -12,29 +5,19 @@
   padding: 0;
 }
 
-/* ----------------- ----------------- background image set up ----------------- -----------------  */
-body {
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url("../Images/Background.png");
-  background-size: cover;
-}
-/* ----------------- ----------------- Layout  ----------------- -----------------  */
-
-.login-creat-account-container,
+/* .login-creat-account-container,
 .login-creat-account-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-conten    t: center;
   align-items: center;
-}
+} */
 
-.login-creat-account-form {
+/* .login-creat-account-form {
   width: 100%;
-}
+} */
 
-.login-creat-account-container {
-  /* --------center the box horizontally and vertically----------- */
+/* .login-creat-account-container {
 
   position: absolute;
   left: 50%;
@@ -42,43 +25,47 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
-  /* ---------- ------------ */
+  min-height: 100vh;
+height: 100vh;
+  background-image: url("../Images/Background.png");
+  background-size: cover;
+
+
 
   width: 90%;
   max-width: 37.5rem;
-  color: var(--text-color);
-  background-color: var(--login-create-account-background-color);
+  color: #e6e6e6;
+  background-color: #000;
   padding: 2.44em 2.86em 0.62em 4.88em;
-  font-family: var(--font);
-}
+  font-family: inherit;
+} */
 
 
-.login-creat-account-links {
+/* .login-creat-account-links {
   display: inline-block;
   margin-bottom: 1em;
-}
+} */
 
-
-.login-creat-account-links a {
-  border-right: 2px solid var(--theme-color);
+/* .login-creat-account-links a {
+  border-right: 2px solid #00d5ff;
   text-decoration: none;
   padding: 0 0.3em;
-  color: var(--theme-color);
+  color: #00d5ff;
   text-align: center;
   font-family: inherit;
   font-size: 2.0625rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.9375rem; /* 142.424% */
-}
+  line-height: 2.9375rem; 
+} */
 
-.login-creat-account-links a:hover,.login-creat-account-links a:focus{
-  color: var(--text-color);
-}
-.login-creat-account-links a:first-child {
+/* .login-creat-account-links a:hover,.login-creat-account-links a:focus{
+  color: #e6e6e6;
+} */
+/* .login-creat-account-links a:first-child {
   border: none;
-}
-.login-creat-account-container .conditions,
+} */
+/* .login-creat-account-container .conditions,
 .enter-phone-number {
   text-align: right;
   width: 100%;
@@ -87,45 +74,45 @@ body {
   font-weight: 200;
   line-height: 3.125rem;
   letter-spacing: 0.05313rem;
-}
-.enter-phone-number {
+} */
+/* .enter-phone-number {
   margin-bottom: 0.62em;
-}
+} */
 
 
 /* ---------------Underline Animation - Link for conditions links ------------*/
 
-.login-creat-account-container .conditions a {
+/* .login-creat-account-container .conditions a {
   text-decoration: none;
-  color: var(--theme-color);
+  color: #00d5ff;
   position: relative;
   padding-bottom: 0.3em;
-}
+} */
 
-.login-creat-account-container .conditions a::before {
+/* .login-creat-account-container .conditions a::before {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 0;
   height: 2px;
-  background-color: var(--theme-color);
+  background-color: #00d5ff;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
+} */
 
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .login-creat-account-container .conditions a:hover::before {
     left: 0;
     right: auto;
     width: 100%;
   }
-}
+} */
 /* ---------------------------*/
 
 
 /*-------------- button --------------*/
 
-.verification-code-button {
+/* .verification-code-button {
   padding: 0.3em 1.3em;
   font-family: inherit;
   color: #2e2e2e;
@@ -135,25 +122,25 @@ body {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: -0.045rem;
-  background-color: var(--theme-color);
-  border: 1px solid var(--theme-color);
+  background-color: #00d5ff;
+  border: 1px solid #00d5ff;
   margin-bottom: 1em;
   transition: all 0.3s ease;
   cursor: pointer;
-}
+} */
 
-.verification-code-button:hover,.verification-code-button:focus  {
+/* .verification-code-button:hover,.verification-code-button:focus  {
   transform: rotate(360deg);
   transform: scale(1.01);
   background: transparent;
-  color: var(--theme-color);
-}
+  color: #00d5ff;
+} */
 
 
 /* --------------input -------------- */
-
+/* 
 .phone-number-input {
-  color: var(--text-color);
+  color: #e6e6e6;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -168,33 +155,7 @@ body {
   background: #5e5e5e;
   border: none;
 }
+ */
 
 
 
-
-@media (max-width: 700px) {
-  :root{
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 600px) {
-  :root{
-    font-size: 10px;
-  }
-}
-@media (max-width: 400px) {
-  :root{
-    font-size: 8px;
-  }
-}
-@media (max-width: 300px) {
-  :root{
-    font-size: 6px;
-  }
-}
-@media (max-width: 200px) {
-  :root{
-    font-size: 5px;
-  }
-}
